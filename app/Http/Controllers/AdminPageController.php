@@ -25,6 +25,14 @@ class AdminPageController extends Controller
         return view('admin.admin', compact('applicants'));
     }
 
+    public function adminShow()
+    {
+
+        $applicants = Applicant::all();
+
+        return view('admin.admin-show', compact('applicants'));
+    }
+
     public function staff()
     {
     	return view('admin.staff');

@@ -12,13 +12,13 @@
     <header>
         <div class="avatar">
             <div class="avatar-img"></div>
-            <a href="" class="avatar-name">Selamat datang mas Afrian Junior</a>
+            <a href="" class="avatar-name">Selamat datang Admin</a>
         </div>
 
         <nav>
             <ul>
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Applicant</a></li>
+                <li><a href="/admin">Dashboard</a></li>
+                <li><a href="/admin-applicant">Applicant</a></li>
                 <li><a href="">Accepted</a></li>
                 <li><a href="">Rejected</a></li>
                 <li><a href="">Broadcast</a></li>

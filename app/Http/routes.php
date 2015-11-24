@@ -31,6 +31,7 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 // Admin Page
 Route::get('/admin', 'AdminPageController@admin');
+Route::get('/admin-applicant', 'AdminPageController@adminShow');
 // Route::get('/admin/')
 // Staff Page
 Route::get('/staff', 'AdminPageController@staff');
