@@ -1,0 +1,255 @@
+body
+  font-family: 'opensans'
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'opensans'
+
+a
+  color: $black
+  text-decoration: none
+  
+  &:hover
+    color: $alizarin
+    text-decoration: none
+
+b
+  font-family: 'opensans-bold'
+
+.btn
+  border-radius: 0px
+
+.accepted
+  background: #62bc00
+
+.rejected
+  background: #da0000
+
+.edit
+  background: #14e087
+  color: $cloud
+  padding: 2px 5px
+  border-radius: 0px
+
+.delete
+  background: #ef1974
+  color: $cloud
+  padding: 2px 5px
+  border-radius: 0px
+
+table
+
+  tbody
+    
+    tr
+        
+      &:hover
+        font-size: 18px
+    
+      &:last-child
+    
+        a
+          font-style: italic
+        
+input, textarea
+  outline: none
+  display: inline-block
+  border: 1px solid $smoke
+  border-radius: 5px
+  padding: 5px 10px
+  margin: 5px 0px
+  box-shadow: none
+  width: 100%
+
+  &:focus
+    +transition(0.3s)
+    
+    &::-webkit-input-placeholder
+      +transition(0.3s)
+      padding-left: 100px
+      color: rgba(0, 0, 0, 0)
+
+input[type="submit"]
+  border: none
+  width: auto
+  color: $cloud
+  background: $smoke
+  font-family: 'opensans-bold'
+ 
+
+
+
+input::-webkit-input-placeholder
+  color: $smoke
+
+header
+  width: 200px
+  height: 100%
+  position: fixed
+  background: $cloud
+  overflow: hidden
+  border-right: 1px solid $smoke
+
+  .avatar
+    padding: 5px
+    text-align: center
+    
+    .avatar-name
+      margin: 10px 0px 0px 0px
+      font-size: 16px
+    
+    .avatar-img
+      +size(100px)
+      margin: 10px auto
+      border-radius: 100%
+      border: 1px solid $smoke
+      background: 
+        image: url('../img/psb-orange2.svg')
+        size: cover
+        position: center center
+        repeat: no-repeat
+        
+    
+        
+    
+    
+  nav
+    color: $black
+    margin: 20px 0px 40px 0px
+    
+    ul
+    
+      li
+        color: $black
+        margin: 0
+        width: 100%
+        padding: 10px 0px 10px 5px
+        font-size: 17px
+        text-align: left
+        margin-left: 10px
+        display: block
+        border-top: 1px solid $smoke
+        +transition(0.3s)
+        
+        
+        &:after
+          font-family: "FontAwesome"
+          content: "\f105"
+          float: right
+          padding-right: 20px
+        
+        
+  .single-menu
+    color: $black
+    margin: 0
+    width: 100%
+    padding: 10px 0px 10px 5px
+    font-size: 17px
+    text-align: center
+    display: block
+    position: relative
+    border-top: 1px solid $smoke
+    border-bottom: 1px solid $smoke
+    +transition(0.3s)
+    
+    
+    span
+      +transition(0.3s)
+      position: relative
+    
+ 
+        
+.home
+  width: 40%
+  margin: 50px auto
+  text-align: center
+
+  h1
+    font-size: 70px
+    
+  .login
+    
+    input[type="text"], input[type="password"]
+      width: 300px    
+    
+main
+  margin-left: 200px
+  padding: 20px 40px
+
+  .main-header
+    font-size: 40px
+    
+  .status-bar
+    margin: 10px 0px
+    
+    .status
+      background: $smoke
+      overflow: hidden
+      color: $cloud
+      height: 250px
+      
+      .status-header
+        margin: 10px 0px 10px 10px
+        border-bottom: 1px solid $cloud
+        padding: 0px 10px 5px 0px
+       
+        h2
+          font-size: 18px
+          text-align: right
+        
+        h3
+          font-size: 45px
+          text-align: right
+        
+      .status-desc
+        color: $cloud
+        padding: 0px 10px 20px 10px
+        
+        a
+          display: block
+          text-align: right
+          padding: 2.5px 0px
+          color: $cloud
+        
+.quick
+  
+  .latest-applicant
+    
+    .table-responsive
+        
+      table
+        
+        tbody
+        
+          tr
+            
+            td
+                          
+              &:last-child
+                font-size: 11px
+                color: $smoke
+                font-style: italic
+            
+.detail
+  margin: 30px 0px 0px 0px
+
+  .detail-app
+    
+    .table-responsive
+      margin-left: 15px
+    
+    .detail-button
+      display: flex
+      margin-top: 20px
+      justify-content: space-around
+    
+      .btn
+        width: 50%
+        border-radius: 0px
+        font-size: 22px
+        margin: 2px
+        color: $cloud
+        
+  .user-detail
+    border: 1px solid $smoke
+    padding: 20px
+    font-size: 18px

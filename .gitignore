@@ -1,0 +1,6 @@
+/vendor
+/node_modules
+/PSB
+Homestead.yaml
+Homestead.json
+.env

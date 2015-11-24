@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: none; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("./fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("./fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato.ttf"); }
+@font-face {
+  font-family: 'lato-tin';
+  src: url("../fonts/lato-tin.ttf"); }
+@font-face {
+  font-family: 'opensans';
+  src: url("../fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: 'opensans-bold';
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+html, body, span, applet, div, object, iframe, h1, h2, h3, h4, h5, h6, a, p, blockquote, pre, abbr, acronym, address, big, cite, code, nav, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "opensans"; }
+
+body {
+  font-family: "opensans"; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "opensans"; }
+
+a {
+  color: #313131;
+  text-decoration: none; }
+  a:hover {
+    color: #e84c3d;
+    text-decoration: none; }
+
+b {
+  font-family: "opensans-bold"; }
+
+.btn {
+  border-radius: 0px; }
+
+.accepted {
+  background: #62bc00; }
+
+.rejected {
+  background: #da0000; }
+
+.edit {
+  background: #14e087;
+  color: #ecf0f1;
+  padding: 2px 5px;
+  border-radius: 0px; }
+
+.delete {
+  background: #ef1974;
+  color: #ecf0f1;
+  padding: 2px 5px;
+  border-radius: 0px; }
+
+table tbody tr:hover {
+  font-size: 18px; }
+table tbody tr:last-child a {
+  font-style: italic; }
+
+input, textarea {
+  outline: none;
+  display: inline-block;
+  border: 1px solid #ababab;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0px;
+  box-shadow: none;
+  width: 100%; }
+  input:focus, textarea:focus {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      padding-left: 100px;
+      color: transparent; }
+
+input[type="submit"] {
+  border: none;
+  width: auto;
+  color: #ecf0f1;
+  background: #ababab;
+  font-family: "opensans-bold"; }
+
+input::-webkit-input-placeholder {
+  color: #ababab; }
+
+header {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  background: #ecf0f1;
+  overflow: hidden;
+  border-right: 1px solid #ababab; }
+  header .avatar {
+    padding: 5px;
+    text-align: center; }
+    header .avatar .avatar-name {
+      margin: 10px 0px 0px 0px;
+      font-size: 16px; }
+    header .avatar .avatar-img {
+      height: 100px;
+      width: 100px;
+      margin: 10px auto;
+      border-radius: 100%;
+      border: 1px solid #ababab;
+      background-image: url("../img/psb-orange2.svg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+  header nav {
+    color: #313131;
+    margin: 20px 0px 40px 0px; }
+    header nav ul li {
+      color: #313131;
+      margin: 0;
+      width: 100%;
+      padding: 10px 0px 10px 5px;
+      font-size: 17px;
+      text-align: left;
+      margin-left: 10px;
+      display: block;
+      border-top: 1px solid #ababab;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      header nav ul li:after {
+        font-family: "FontAwesome";
+        content: "";
+        float: right;
+        padding-right: 20px; }
+  header .single-menu {
+    color: #313131;
+    margin: 0;
+    width: 100%;
+    padding: 10px 0px 10px 5px;
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    position: relative;
+    border-top: 1px solid #ababab;
+    border-bottom: 1px solid #ababab;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    header .single-menu span {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      position: relative; }
+
+.home {
+  width: 40%;
+  margin: 50px auto;
+  text-align: center; }
+  .home h1 {
+    font-size: 70px; }
+  .home .login input[type="text"], .home .login input[type="password"] {
+    width: 300px; }
+
+main {
+  margin-left: 200px;
+  padding: 20px 40px; }
+  main .main-header {
+    font-size: 40px; }
+  main .status-bar {
+    margin: 10px 0px; }
+    main .status-bar .status {
+      background: #ababab;
+      overflow: hidden;
+      color: #ecf0f1;
+      height: 250px; }
+      main .status-bar .status .status-header {
+        margin: 10px 0px 10px 10px;
+        border-bottom: 1px solid #ecf0f1;
+        padding: 0px 10px 5px 0px; }
+        main .status-bar .status .status-header h2 {
+          font-size: 18px;
+          text-align: right; }
+        main .status-bar .status .status-header h3 {
+          font-size: 45px;
+          text-align: right; }
+      main .status-bar .status .status-desc {
+        color: #ecf0f1;
+        padding: 0px 10px 20px 10px; }
+        main .status-bar .status .status-desc a {
+          display: block;
+          text-align: right;
+          padding: 2.5px 0px;
+          color: #ecf0f1; }
+
+.quick .latest-applicant .table-responsive table tbody tr td:last-child {
+  font-size: 11px;
+  color: #ababab;
+  font-style: italic; }
+
+.detail {
+  margin: 30px 0px 0px 0px; }
+  .detail .detail-app .table-responsive {
+    margin-left: 15px; }
+  .detail .detail-app .detail-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .detail .detail-app .detail-button .btn {
+      width: 50%;
+      border-radius: 0px;
+      font-size: 22px;
+      margin: 2px;
+      color: #ecf0f1; }
+  .detail .user-detail {
+    border: 1px solid #ababab;
+    padding: 20px;
+    font-size: 18px; }
