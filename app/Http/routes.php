@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -32,9 +31,16 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 // Admin Page
 Route::get('/admin', 'AdminPageController@admin');
 Route::get('/admin-applicant', 'AdminPageController@adminShow');
-// Route::get('/admin/')
+
 // Staff Page
 Route::get('/staff', 'AdminPageController@staff');
 
 // Applicant Page
 Route::get('/applicant', 'AdminPageController@applicant');
+
+// Handle Broadcast URI
+Route::get('/broadcast', 'BroadcastController@show');
+Route::get('/broadcast/{id?}/edit', 'BroadcastController@edit');
+Route::post('/broadcast/{id?}/edit', 'BroadcastController@update');
+Route::get('/broadcast/{id?}/delete', 'BroadcastController@destroy');
+Route::post('/postBroadcast', 'BroadcastController@postBroadcast');

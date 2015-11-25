@@ -21,11 +21,11 @@
                 <li><a href="/admin-applicant">Applicant</a></li>
                 <li><a href="">Accepted</a></li>
                 <li><a href="">Rejected</a></li>
-                <li><a href="">Broadcast</a></li>
+                <li><a href="/broadcast">Broadcast</a></li>
                 <li><a href="">Setting</a></li>
             </ul>
         </nav>
-        <a href="" class="single-menu"><span>Logout</span></a>
+        <a href="/auth/logout" class="single-menu"><span>Logout</span></a>
     </header>
     <main>
         <div class="main-header">Dashboard</div>
@@ -97,10 +97,11 @@
                 <div class="col-md-8">
                     <div class="quick-broadcast">
                        <h3>Quick Broadcast</h3>
-                        <form action="">
-                            <input type="text" placeholder="Title">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                            <input type="submit" value="Send">
+                        <form action="/postBroadcast" method="post">
+                            {!! csrf_field() !!}
+                            <input type="text" placeholder="Title" name="title">
+                            <textarea id="message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+                            <input type="submit" value="Send" name="submit">
                         </form>
                     </div>
                 </div>
@@ -108,5 +109,4 @@
         </div>
     </main>
 </body>
-
 </html>

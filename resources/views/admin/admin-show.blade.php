@@ -20,11 +20,11 @@
                 <li><a href="/admin-applicant">Applicant</a></li>
                 <li><a href="">Accepted</a></li>
                 <li><a href="">Rejected</a></li>
-                <li><a href="">Broadcast</a></li>
+                <li><a href="/broadcast">Broadcast</a></li>
                 <li><a href="">Setting</a></li>
             </ul>
         </nav>
-        <a href="" class="single-menu"><span>Logout</span></a>
+        <a href="/auth/logout" class="single-menu"><span>Logout</span></a>
     </header>
     <main>
         <div class="main-header">Applicant List</div>
