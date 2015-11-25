@@ -17,8 +17,13 @@ class DatabaseSeeder extends Seeder
         // $this->call(UserTableSeeder::class);
 
         App\Applicant::truncate();
+        App\AcademicYear::truncate();
 
-        $applicants = factory('App\Applicant', 10)->create();
+        $academic_years = factory('App\AcademicYear', 5)->create();
+
+        $applicants = factory('App\Applicant', 10)->create()->each(function($applicant) use ($academic_years){
+            $academic_years->random()->applicants()->save($applicant);
+        }); 
 
         Model::reguard();
     }

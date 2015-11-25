@@ -43,3 +43,13 @@ $factory->define(App\Applicant::class, function(Faker\Generator $faker){
 		'document_graduate' => $document_graduate,
 	];
 });
+
+$factory->define(App\AcademicYear::class, function(Faker\Generator $faker){
+	return [
+		'year' => $faker->year($max = 'now'),
+	];
+});
+
+
+
+

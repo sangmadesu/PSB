@@ -14,27 +14,25 @@
 								<th>No.Reg</th>
 								<th>Nama</th>
 								<th>Alamat</th>
-								<th>Tempat, Tgl Lahir</th>
 								<th>No Telp</th>
 								<th>Nama Sekolah</th>
 								<th>Alamat Sekolah</th>
-								<th>Nama Ayah</th>
-								<th>NEM</th>
+								<th>Aksi</th>
 							</tr>
 						</thead>
 						<tbody>
 							@foreach($applicants as $applicant)
-								<tr>
-									<td>{{ $applicant->reg_number }}</td>
-									<td>{{ $applicant->name }}</td>
-									<td>{{ $applicant->address }}</td>
-									<td>{{ $applicant->place_of_birth }}, {{ $applicant->date_of_birth }}</td>
-									<td>{{ $applicant->handphone_number }}</td>
-									<td>{{ $applicant->middle_school_name }}</td>
-									<td>{{ $applicant->middle_school_address }}</td>
-									<td>{{ $applicant->parent_name }}</td>
-									<td>{{ $applicant->average_score }}</td>
-								</tr>
+							<tr>
+								<td>{{ $applicant->reg_number }}</td>
+								<td>{{ $applicant->name }}</td>
+								<td>{{ $applicant->address }}</td>
+								<td>{{ $applicant->handphone_number }}</td>
+								<td>{{ $applicant->middle_school_name }}</td>
+								<td>{{ $applicant->middle_school_address }}</td>
+								<td>
+									<a href="{{ route('admin.applicants.show', $applicant->id) }}" class="btn btn-default btn-block">Detail</a>
+								</td>
+							</tr>
 							@endforeach
 						</tbody>
 					</table>

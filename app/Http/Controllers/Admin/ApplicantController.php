@@ -50,7 +50,8 @@ class ApplicantController extends Controller
      */
     public function show($id)
     {
-        //
+        $applicant = Applicant::findOrFail($id);
+        return view('admin.applicants.show', compact('applicant'));
     }
 
     /**

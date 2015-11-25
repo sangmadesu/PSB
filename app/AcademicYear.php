@@ -8,7 +8,7 @@ class AcademicYear extends Model
 {
     protected $table = 'academic_year';
 
-    public function applicant()
+    public function applicants()
     {
     	return $this->hasMany('App\Applicant', 'academic_year_id');
     }
